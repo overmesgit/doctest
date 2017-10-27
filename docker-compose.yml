@@ -14,5 +14,8 @@ services:
       - "80:80"
     networks:
       - webnet
+  sut:
+    build: .
+    command: run_tests.sh
 networks:
   webnet:
